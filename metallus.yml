@@ -11,7 +11,7 @@ jobs:
         name: python-aws
         version: 1.5.2
         depends:
-          - python-aws
+          - python-pip
         repos:
           - mxm-public
         target: install
