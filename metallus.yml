@@ -1,0 +1,17 @@
+software_groups: &software
+  - "base"
+
+jobs:
+  python-aws:
+    builder: "make"
+    software_groups: *software
+    base: "ubuntu:12.04"
+    packages:
+      - type: debian
+        name: python-aws
+        version: 1.5.2
+        depends:
+          - python-aws
+        repos:
+          - mxm-public
+        target: install
