@@ -14,7 +14,6 @@ jobs:
     packages:
       - type: debian
         name: python-aws
-        version: 1.5.2
         depends:
           - python-pip
         repos:
