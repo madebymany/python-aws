@@ -3,14 +3,14 @@ software_groups: &software
 
 packages:
   branch_codenames:
-    master: bionic-unstable
-    production: bionic-stable
+    master: focal-unstable
+    production: focal-stable
 
 jobs:
   python-aws:
     builder: "make"
     software_groups: *software
-    base: "quay.io/madebymany/build-bases:bionic"
+    base: "quay.io/madebymany/build-bases:focal"
     packages:
       - type: debian
         name: python-aws
